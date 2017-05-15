@@ -8,6 +8,14 @@
       "program": "${workspaceRoot}/examples/async-await/index.js",
       "runtimeArgs": ["--harmony"],
       "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Filesystem Example",
+      "program": "${workspaceRoot}/examples/filesystem/index.js",
+      "runtimeArgs": ["--harmony"],
+      "console": "internalConsole"
     }
   ]
 }
