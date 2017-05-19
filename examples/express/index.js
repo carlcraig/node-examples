@@ -1,13 +1,12 @@
 const express = require('express');
+const about = require('./about');
 
 const app = express();
 
+about(app);
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
-});
-
-app.get('/about/', (req, res) => {
-  res.send('About Me')
 });
 
 app.listen(3000, () => {
